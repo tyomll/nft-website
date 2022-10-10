@@ -378,3 +378,177 @@ body {
   text-decoration: none;
   color: #fff;
 }
+.header__buttons{
+  display: none;
+}
+@media (max-width: 1130px){
+    .header, .container{
+        max-width: 900px;
+    }
+    .header__list{
+        gap: 20px;
+        font-size: 16px;
+    }
+    .form__input{
+        width: 260px;
+        padding: 13px 13px 13px 40px;
+        font-size: 14px;
+    }
+    .main__text{
+      flex-basis: 450px;
+    }
+    .main__title{
+      font-size: 43px;
+    }
+    .main__desc, .main__btn, .main__item, .desc, .card__linkm .collapsible{
+      font-size: 18px;
+    }
+    .main__image{
+      flex-basis: calc(100% - 450px - 30px);
+    }
+    .main__span{
+      font-size: 26px;
+    }
+    .main__list{
+      gap:40px;
+    }
+    .company__img{
+      height: 52px;
+    }
+    .title{
+      font-size: 36px;
+    }
+    .card__cover, .card__img{
+      height: 300px;
+    }
+    .card__price, .card__author, .card__nick{
+      font-size: 16px;
+    }
+}
+
+@media (max-width: 880px){
+  .header,.container{
+    max-width: 750px;
+  }
+  .header__buttons{
+    display:flex;
+  }
+  .form,
+  .header__nav{
+    display: none;
+  }
+  .header__search,
+  .header__menu{
+    display: block;
+    border: none;
+    background: transparent;
+    height: 20px;
+  }
+  .header__search{
+    width: 20px;
+    background-image: url(../images/search-mobile.svg);
+  }
+  .header__menu{
+    width: 27px;    
+    background-image: url(../images/menu-mobile.svg);
+    margin-left: 22px;
+  }
+  .main{
+    position: relative;
+  }
+  .main__image{
+    flex-basis: inherit;
+    position: absolute;
+    max-width: 33vw;
+    right: 0;
+    bottom: 0;
+  }
+  .company__img{
+    height: 40px;
+  }
+  .card__cover, .card__img{
+    height: 30vw;
+  }
+  .card__info{
+    flex-direction: column;
+    text-align: center;
+  }
+  .card__bid{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .card__item{
+    padding: 15px;
+  }
+  .banner{
+    padding: 30px 15px 48px;
+  }
+  .banner__title{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px){
+  .header, .container{
+    max-width: 400px;
+  }
+  .header{
+    padding-bottom: 60px;
+  }
+  .faq, .card{
+    flex-direction: column;
+  }
+  .card{
+    max-width: 300px;
+    margin: 30px auto 100px;
+  }
+  .card__item, .company__img{
+    margin-bottom: 15px;
+  }
+  .main__image{
+    display: none;
+  }
+  .main__text{
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .main__title{
+    font-size: 34px;
+  }
+  .main__list{
+    justify-content: center;
+  }
+  .main__desc, .main__btn, .main__item, .desc, .card__link, .collapsible,  .banner__link{
+    font-size: 16px;
+  }
+  .title{
+    font-size: 30px;
+  }
+  .desc{
+    max-width: 300px;
+  }
+  .company{
+    margin-bottom: 100px;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .company__img{
+    height: 3.8vw;
+    margin-bottom: 15px;
+  }
+  .banner__title{
+    font-size: 22px;
+  }
+  .card__cover, .card__img{
+    height: 50vw;
+  }
+}
+@media (max-width: 500px){
+  .company{
+    flex-direction: column;
+  }
+  .company__img{
+    height: 40px;
+    margin-top: 20px;
+  }
+}
